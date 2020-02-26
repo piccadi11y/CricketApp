@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cricket App</title>
+        <meta charset=utf-8>
+        <link rel=stylesheet type="text/css" href="styles.css">
+        <script type=text/javascript src="JS/Log.js"></script>
+        <script type=text/javascript src="lib/yaml.js" defer></script>
+        
+        
+        <script type=text/javascript src="JS/Wicket.js" defer></script>
+        <script type=text/javascript src="JS/Delivery.js" defer></script>
+        <script type=text/javascript src="JS/Over.js" defer></script>
+        <script type=text/javascript src="JS/Batter.js" defer></script>
+        <script type=text/javascript src="JS/Bowler.js" defer></script>
+        <script type=text/javascript src="JS/Inning.js" defer></script>
+        <script type=text/javascript src="JS/Team.js" defer></script>
+        <script type=text/javascript src="JS/Umpire.js" defer></script>
+        <script type=text/javascript src="JS/Match.js" defer></script>
+        <script type=text/javascript src="JS/Controller.js" defer></script>
+    </head>
+    <body onload=ctrl.initPage()>
+        <div id=controlBar>
+            <div id=fileChangerContainer>
+                <!--<p></p>-->
+                <button onclick=ctrl.handle_fileChanger()>Change File</button>
+                <div id=fileChanger>
+                    <input type=file id=fileInput name="files[]">
+                    <p id=fileChanger_output></p>
+                </div>
+            </div>
+            <div id=viewChangerContainer>
+                <div id=viewChanger>
+                    <button onclick=ctrl.initialisePage_FULL();ctrl.handle_viewChanger(false) class=viewChanger>Full</button>
+                    <button onclick=ctrl.initialisePage_TEXT();ctrl.handle_viewChanger(false) class=viewChanger>Text</button>
+                </div>
+                <button onclick=ctrl.handle_viewChanger()>Change View</button>
+            </div>
+        </div>
+        <div id=initContainer>
+            <div id=initOverlay>
+                <div id=inputContainer>
+                    <input type=file id=fileInput_init name="files[]"/>
+                    <p id=init_uploadStatus></p>
+                </div>
+                <div id=modeSelect>
+                    <p>Mode Select:</p>
+                    <button onclick=ctrl.initialisePage_FULL()>Full</button>
+                    <button onclick=ctrl.initialisePage_TEXT()>Text Only</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id=contentBody>
+            <div id=fullOutContainer>
+                <p>This section was put in place for <b>Section D</b> to be built in. See 'Text' view for <b>Section B.</b></p>
+            </div>
+        
+            <div id=textOutContainer>
+                <button class=collapsible>Match Information</button>
+                <div class=content>
+                    <p id=content_matchInformation>content</p>
+                </div>
+                
+                <button class=collapsible>Teams</button>
+                <div class=content>
+                    <!--<p>here are the teams</p>-->
+                    <button id="team1" class="collapsible imbeddedCollapsible imbedded">Team 1</button>
+                    <div class="content imbeddedContent imbedded">
+                        <p id="team1_statistics">here is the stuff about team 1</p>
+                        <button class="collapsible imbeddedCollapsible imbedded">Batters</button>
+                        <div class="content imbeddedContent imbedded">
+                            <p id="team1_batters">content</p>
+                        </div>
+                        <button class="collapsible imbeddedCollapsible imbedded">Bowlers</button>
+                        <div class="content imbeddedContent imbedded">
+                            <p id="team1_bowlers">content</p>
+                        </div>
+                    </div>
+                    
+                    <button id="team2" class="collapsible imbeddedCollapsible imbedded">Team 2</button>
+                    <div class="content imbeddedContent imbedded">
+                        <p id="team2_statistics">here is the stuff about team 2</p>
+                        <button class="collapsible imbeddedCollapsible imbedded">Batters</button>
+                        <div class="content imbeddedContent imbedded">
+                            <p id="team2_batters">content</p>
+                    
+                        </div>
+                        <button class="collapsible imbeddedCollapsible imbedded">Bowlers</button>
+                        <div class="content imbeddedContent imbedded">
+                            <p id=team2_bowlers>content</p>
+                    
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class=collapsible>Innings/Deliveries</button>
+                <div class=content>
+                    <p id="deliveries">*jazz hands* content</p>
+                </div>
+            </div>
+        </div>
+        <div id=footerContainer>
+            <p>version 0.07</p>
+        </div>
+    </body>
+</html>

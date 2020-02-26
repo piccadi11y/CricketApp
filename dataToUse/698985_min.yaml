@@ -1,0 +1,134 @@
+---
+meta:
+  data_version: 0.9
+  created: 2014-05-05
+  revision: 2
+info:
+  #city: Doha
+  dates:
+    - 2014-01-19        #this date is 5 days too late? apparently
+    - 2014-01-20
+    #- 2014-01-21
+    #- 2014-01-22
+    #- 2014-01-23
+  gender: female
+  match_type: T20
+  neutral_venue: 1
+  outcome:
+    by:
+      wickets: 6
+      #other: 5
+    winner: Ireland
+  overs: 20
+  player_of_match:
+    - IMHC Joyce
+  teams:
+    - Ireland
+    - Pakistan
+  toss:
+    decision: field
+    winner: Ireland
+  umpires:
+    - Kamal Merchant
+    - Mohammad Nasim
+    - Ime A. Test
+    #- Ime A. Test Too
+  venue: West End Park International Cricket Stadium
+innings:
+  - 1st innings:
+      team: Pakistan
+      deliveries:
+        - 0.1:
+            batsman: Nain Abidi
+            bowler: LN McCarthy
+            non_striker: Javeria Rauf
+            runs:
+              batsman: 1
+              extras: 0
+              total: 1
+        - 0.2:
+            batsman: Javeria Rauf
+            bowler: LN McCarthy
+            non_striker: Nain Abidi
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+        - 0.3:
+            batsman: Javeria Rauf
+            bowler: LN McCarthy
+            extras:
+              wides: 96
+            non_striker: Nain Abidi
+            runs:
+              batsman: 0
+              extras: 96
+              total: 96
+        - 2.5:
+            batsman: Nain Abidi
+            bowler: LN McCarthy
+            non_striker: Javeria Rauf
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              fielders:
+                - MEMO Scott-Hayward
+              kind: caught
+              player_out: Nain Abidi
+  - 2nd innings:
+      team: Ireland
+      deliveries:
+        - 0.1:
+            batsman: CMA Shillington
+            bowler: Asmavia Iqbal
+            extras:
+              legbyes: 20
+            non_striker: ELC Flanagan
+            runs:
+              batsman: 0
+              extras: 20
+              total: 20
+        - 0.2:
+            batsman: ELC Flanagan
+            bowler: Asmavia Iqbal
+            extras:
+              wides: 1
+            non_striker: CMA Shillington
+            runs:
+              batsman: 1
+              extras: 1
+              total: 2
+        - 0.3:
+            batsman: ELC Flanagan
+            bowler: Asmavia Iqbal
+            extras:
+              wides: 1
+            non_striker: CMA Shillington
+            runs:
+              batsman: 2
+              extras: 1
+              total: 3
+        - 4.1:
+            batsman: ELC Flanagan
+            bowler: Sania Khan
+            non_striker: CMA Shillington
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+            wicket:
+              kind: lbw
+              player_out: ELC Flanagan
+        - 5.2:          #totally made this one up for testing purposes
+            batsman: CMA Shillington
+            bowler: Sania Khan
+            non_striker: ELC Flanagan
+            runs:
+              batsman: 69
+              extras: 0
+              total: 69
+            wicket:
+              kind: iffy
+              player_out: CMA Shillington

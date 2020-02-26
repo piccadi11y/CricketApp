@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(200, 0, 150, .5);
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+}
+
+#contentBody {
+    height: 95%;
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+}
+
+#controlBar {
+    width: 100%;
+    height: 25px;
+    background-color: aqua;
+}
+
+#footerContainer {
+    position: fixed;
+    width: 100%;
+    background-color: red;
+    bottom: 0px;
+}
+
+#footerContainer p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#fileChangerContainer {
+    display: inline;
+    
+    position: absolute;
+    left: 1%;
+}
+
+#fileChanger {
+    display: inline;
+    visibility: hidden;
+}
+
+#fileChanger_output {
+    display: inline;
+}
+
+#fileInput {
+    width: 25%
+}
+
+#fullOutContainer {
+    display: none;
+}
+
+#textOutContainer {
+    display: none;
+}
+
+#viewChangerContainer {
+    display: inline;
+    
+    position: absolute;
+    right: 1%;
+}
+
+#viewChanger {
+    display: inline;
+    
+    visibility: hidden;
+}
+
+#initContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    visibility: hidden;
+}
+
+#initOverlay {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66%;
+    height: 33%;
+    background-color: green;
+    display: block;
+}
+
+#fileInput_init {
+    background-color: yellow;
+    top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%
+}
+
+#inputContainer {
+    background-color: skyblue;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+#inputContainer p {
+    text-align: center;
+    visibility: hidden;
+}
+
+#modeSelect {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 80px;
+    
+    visibility: hidden;
+    background-color: orange;
+}
+
+#modeSelect p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#modeSelect button {
+    display: block;
+    margin: auto;
+    width: 33%;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.active, .imbeddedCollapsible:hover {
+    background-color: purple;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    outline: none;
+}
+
+.active:after {
+    content: '\2796';
+}
+
+.content {
+    /*padding: 1px 2px 3px 4px;*/
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    background-color: darkkhaki;
+    
+    /*max-height: 0;*/
+    /*transition: display 0.2s ease-out;*/
+}
+
+.content p {
+    margin: 16px;
+}
+
+.imbeddedCollapsible {
+    background-color: darkviolet;
+    /*margin-left: 2.5%;*/
+}
+
+.imbeddedContent {
+    /*margin: 0 16px;*/
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: darksalmon
+}
+
+.imbedded {
+    /*width: 95%;*/
+}
+
